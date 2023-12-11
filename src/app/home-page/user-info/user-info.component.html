@@ -1,0 +1,6 @@
+<p>user-info works!</p>
+<div>
+<label for="item-input">Edit:</label>
+<input type="text" id="item-input" #newItem [value]="user.name">
+<button type="button" (click)="changeName(newItem.value)">Add to parent</button>
+</div>

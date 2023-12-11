@@ -1,0 +1,12 @@
+<p>home-page works!</p>
+<div>
+    <app-user-info [user]="user" (changeNameEvent)="change($event)"></app-user-info>
+
+    <h2>Home-page: {{ user.name }}</h2>
+    <p class="">Home-page: {{ user.age }}</p>
+
+    @if (estado?.sigla === 'BA') {
+       <p> Bora Bahia!!</p>
+       <p>{{estado?.regiao?.nome}}, {{estado?.sigla}}</p>
+    }
+</div>
