@@ -17,3 +17,5 @@ USER nginx:nginx
 COPY --from=build-stage /app/dist/ng-app /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon -off;"]
+# docker build -t ng-app .
+# docker run -p 8080:80 ng-app
